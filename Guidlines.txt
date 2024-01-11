@@ -1,0 +1,7 @@
+Postman api link:
+
+https://gold-zodiac-248665.postman.co/workspace/New-Team-Workspace~b21a96ef-f533-4e1f-8847-6193186c116a/collection/28835542-5a33d541-ec11-4681-bd9e-a4d60d63f147?action=share&creator=28835542
+
+All routes working correctly and sample is already added to make comfortable with the details
+
+Diagram is also attached here with name diagram.drawio
