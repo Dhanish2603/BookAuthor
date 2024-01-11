@@ -96,7 +96,6 @@ exports.logoutAuthor = async (req, res) => {
 // author/me route
 exports.authorDetails = async (req, res) => {
   //authenticated success
-
   res.send(req.author);
 };
 
@@ -118,7 +117,9 @@ exports.getAuthorBooks = async (req, res) => {
     if (!param || typeof param !== "string") {
       throw new Error("Invalid author ID parameter");
     }
-    const fetchAuthor = await author.findById(param);
+    var fetchAuthor = await author.findById(param);
+    fetchAuthor = { ...fetchAuthor, totalBooks: fetchAuthor.Publishment.length };
+
     res.send(fetchAuthor);
   } catch (error) {
     console.log(new Error());

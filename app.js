@@ -30,7 +30,7 @@ const MONGO_URL = process.env.MONGO_URL;
 // Connect Mongodb
 mongoose
   .connect(
-    "mongodb+srv://madhvesh:madhvesh@devtemp.lz30rdg.mongodb.net/book_Api?retryWrites=true&w=majority"
+    MONGO_URL
   )
   .then(() => {
     console.log("Connected MONGODB");

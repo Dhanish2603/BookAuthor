@@ -8,6 +8,7 @@ bookRoutes.post("/addbook", authentication, controller.addBook);
 
 bookRoutes.get("/", authentication, controller.listBooks);
 // all list books
-//.put(/book/likes/:id)likes for book
+bookRoutes.put("/likes/:id", authentication, controller.likeBooks);
+bookRoutes.put("/unlike/:id", authentication, controller.unlikeBooks);
 
 module.exports = bookRoutes;
