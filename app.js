@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //news
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 // routes
 app.use("/", authorRoutes);
